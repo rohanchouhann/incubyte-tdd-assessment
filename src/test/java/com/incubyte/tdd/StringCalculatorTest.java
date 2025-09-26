@@ -1,0 +1,16 @@
+package com.incubyte.tdd;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class StringCalculatorTest {
+
+    private final StringCalculator calc = new StringCalculator();
+
+    @Test
+    void emptyStringReturnsZero() {
+        assertEquals(0, calc.add(""), "Empty string should return 0");
+    }
+
+}
