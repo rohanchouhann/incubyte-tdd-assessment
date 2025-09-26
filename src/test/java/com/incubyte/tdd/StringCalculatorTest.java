@@ -13,4 +13,8 @@ class StringCalculatorTest {
         assertEquals(0, calc.add(""), "Empty string should return 0");
     }
 
+    @Test
+    void singleNumberReturnsValue() {
+        assertEquals(1, calc.add("1"));
+    }
 }
