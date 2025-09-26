@@ -22,9 +22,14 @@ class StringCalculatorTest {
     void twoNumbersCommaSeparated() {
         assertEquals(6, calc.add("1,5"));
     }
-    
+
     @Test
     void multipleNumbersAreSummed() {
         assertEquals(6, calc.add("1,2,3"));
+    }
+
+    @Test
+    void supportsNewlinesBetweenNumbers() {
+        assertEquals(6, calc.add("1\n2,3"));
     }
 }
